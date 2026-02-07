@@ -35,9 +35,9 @@ public class CategoryServiceImp implements CategoryService{
                         .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Resource not found"));
 
         if(category == null)
-            return "Category with categoryId: "+ categoryId +" not found!";
+            return "Category with category Id: "+ categoryId +" not found!";
         categories.remove(category);
-        return "Category with categoryId: "+ categoryId +" deleted successfully!";
+        return "Category with category Id: "+ categoryId +" deleted successfully!";
     }
 
     @Override
